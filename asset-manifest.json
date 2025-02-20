@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/pixoram/static/css/main.998c9abe.css",
-    "main.js": "/pixoram/static/js/main.2c2595ae.js",
-    "index.html": "/pixoram/index.html",
-    "main.998c9abe.css.map": "/pixoram/static/css/main.998c9abe.css.map",
-    "main.2c2595ae.js.map": "/pixoram/static/js/main.2c2595ae.js.map"
+    "main.css": "./static/css/main.998c9abe.css",
+    "main.js": "./static/js/main.2c2595ae.js",
+    "index.html": "./index.html",
+    "main.998c9abe.css.map": "./static/css/main.998c9abe.css.map",
+    "main.2c2595ae.js.map": "./static/js/main.2c2595ae.js.map"
   },
   "entrypoints": [
     "static/css/main.998c9abe.css",
