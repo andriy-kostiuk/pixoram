@@ -6,6 +6,9 @@ import { Good } from '../../types/good';
 import { Selector } from '../Selector';
 import { Pagination } from '../Pagination';
 import { useUpdateSearchParams } from '../../hooks';
+import { Loader } from '../Loader';
+
+const PER_PAGE = 4;
 
 export const Goods: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -13,8 +16,6 @@ export const Goods: React.FC = () => {
   const [error, setError] = useState('');
 
   const [searchParams, updateSearchParams] = useUpdateSearchParams();
-
-  const PER_PAGE = 4;
 
   useEffect(() => {
     setLoading(true);
@@ -83,7 +84,7 @@ export const Goods: React.FC = () => {
     content = <p>{error}</p>;
   } else {
     content = loading ? (
-      <p>Loading...</p>
+      <Loader />
     ) : (
       <>
         <div className={styles.goods__controllers}>
