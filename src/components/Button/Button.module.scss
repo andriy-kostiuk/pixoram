@@ -1,0 +1,30 @@
+@import '../../styles/utils.scss';
+
+.button {
+  width: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  border: 1px solid $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  color: inherit;
+
+  @include transition;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:disabled {
+    border-color: $elements;
+    background-color: inherit;
+    cursor: auto;
+  }
+
+  svg path {
+    fill: $secondary;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/utils.scss';
+
+.pagination-item {
+  display: block;
+
+  &__btn {
+    &--active,
+    &--active:hover {
+      cursor: auto;
+      background-color: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../styles/utils.scss';
+
+.header {
+  height: 40px;
+  background-color: $white;
+
+  @include on-tablet {
+    height: 60px;
+  }
+
+  &__nav {
+    @include page-padding-inline;
+    max-width: $desktop-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @include transition(0.4s, scale);
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &--logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $green;
+    }
+
+    &--cart {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+
+  &__cart-count {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $red;
+    color: $white;
+    width: 16px;
+    height: 16px;
+
+    font-size: 9px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50%;
+    left: 50%;
+
+    border: 1px solid $white;
+  }
+}

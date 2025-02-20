@@ -1,0 +1,17 @@
+@import '../../styles/utils.scss';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 1rem;
+
+  @include on-tablet {
+    gap: 30px;
+  }
+
+  @include on-desktop {
+    gap: 40px;
+  }
+}
